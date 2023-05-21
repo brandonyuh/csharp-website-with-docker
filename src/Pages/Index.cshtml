@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>The time on the server is @DateTime.Now</p>
+    <p><a href="https://docs.docker.com/language/dotnet/">More detailed instructions</a></p>
+    <p>
+        <pre>
+            mkdir dotnet-docker
+            cd dotnet-docker
+            dotnet new webapp -n myWebApp -o src --no-https
+            dotnet run --urls http://localhost:5000
+            docker build --tag dotnet-docker .
+            docker run dotnet-docker
+            docker run --publish 5000:80 dotnet-docker
+        </pre>
+    </p>
+
+</div>
