@@ -1,4 +1,5 @@
 # csharp-website-with-docker
+![](https://brandonyuh.me/portfolio/dockercsharp.png)
 A template to use for making websites in C# and deploying to Docker.
 
 https://docs.docker.com/language/dotnet/
